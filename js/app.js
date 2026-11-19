@@ -104,19 +104,31 @@
 
 // }
 
-let number=0;
+// let number=0;
 
-function btnIncrementOnAction(){
-number++;
+// function btnIncrementOnAction(){
+// number++;
 
-numberCount.innerText= "Number Count - "+ number;
+// numberCount.innerText= "Number Count - "+ number;
 
-}
+// }
 
-function btnDecrementOnAction(){
-number--;
+// function btnDecrementOnAction(){
+// number--;
     
-numberCount.innerText= "Number Count -"+number;
+// numberCount.innerText= "Number Count -"+number;
 
 
+// }
+
+function btnSubmitOnAction(){
+   let textName= document.getElementById("txtName");
+   console.log(textName.value)
+
+    Sname.innerText= "My Name is >>" + textName.value;
 }
+
+
+
+
+
