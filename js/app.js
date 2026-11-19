@@ -98,12 +98,25 @@
 
 
 
-function btnclickToOnAction(){
+// function btnclickToOnAction(){
 
-    let title=document.getElementById("text")
-    console.log(text);
+//     title.innerText="Hello Srilanka...!!!";  
 
-    title.innerText="Hello Srilanka...!!!";  
+// }
+
+let number=0;
+
+function btnIncrementOnAction(){
+number++;
+
+numberCount.innerText= "Number Count - "+ number;
+
+}
+
+function btnDecrementOnAction(){
+number--;
+    
+numberCount.innerText= "Number Count -"+number;
 
 
 }
