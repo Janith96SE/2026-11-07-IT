@@ -121,13 +121,28 @@
 
 // }
 
-function btnSubmitOnAction(){
-   let textName= document.getElementById("txtName");
-   console.log(textName.value)
+// function btnSubmitOnAction(){
+//    let textName= document.getElementById("txtName");
+//    console.log(textName.value)
 
-    Sname.innerText= "My Name is >>" + textName.value;
+//     Sname.innerText= "My Name is >>" + textName.value;
+// }
+
+function btnAddOnAction(){
+    
+    let value1= parseInt(textNum1.value) + parseInt(textNum2.value);
+    
+     outPut.innerText= "OUT PUT IS>>>"+ value1;
+
 }
 
+function btnSubtractionOnAction(){
+
+    let value2= parseInt(textNum1.value) - parseInt(textNum2.value);
+    
+     outPut.innerText= "OUT PUT IS>>>"+ value2;
+
+}
 
 
 
