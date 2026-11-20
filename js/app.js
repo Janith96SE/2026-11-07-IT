@@ -128,22 +128,61 @@
 //     Sname.innerText= "My Name is >>" + textName.value;
 // }
 
-function btnAddOnAction(){
+// function btnAddOnAction(){
     
-    let value1= parseInt(textNum1.value) + parseInt(textNum2.value);
+//     let value1= parseInt(textNum1.value) + parseInt(textNum2.value);
     
-     outPut.innerText= "OUT PUT IS>>>"+ value1;
+//      outPut.innerText= "OUT PUT IS>>>"+ value1;
 
+// }
+
+// function btnSubtractionOnAction(){
+
+//     let value2= parseInt(textNum1.value) - parseInt(textNum2.value);
+    
+//      outPut.innerText= "OUT PUT IS>>>"+ value2;
+
+// }
+
+
+//-------------- Customer Form-----------------
+
+
+let customerList =[];
+
+function btnSubmitOnAction(){
+   let txtName= document.getElementById("txtName").value;
+   let txtAddress=document.getElementById("txtAddress").value;
+   let txtAge = document.getElementById("txtAge").value;
+   let txtEmail=document.getElementById("txtEmail").value;
+   let txtSalary=document.getElementById("txtSalary").value;
+
+
+   let customer={
+
+            name: txtName,
+            address:txtAddress,
+            age :txtAge,
+            email:txtEmail,
+            salary:txtSalary,
+
+   }
+
+   console.log(customer);
+   customerList.push(customer);
+   console.log(customerList);
+   resetInputFields();
 }
 
-function btnSubtractionOnAction(){
+function resetInputFields(){
+    document.getElementById("txtName").value="";
+    document.getElementById("txtAddress").value="";
+    document.getElementById("txtAge").value="";
+    document.getElementById("txtEmail").value="";
+    document.getElementById("txtSalary").value="";
 
-    let value2= parseInt(textNum1.value) - parseInt(textNum2.value);
-    
-     outPut.innerText= "OUT PUT IS>>>"+ value2;
 
 }
-
 
 
 
