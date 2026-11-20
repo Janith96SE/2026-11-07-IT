@@ -172,6 +172,7 @@ function btnSubmitOnAction(){
    customerList.push(customer);
    console.log(customerList);
    resetInputFields();
+   
 }
 
 function resetInputFields(){
@@ -180,7 +181,30 @@ function resetInputFields(){
     document.getElementById("txtAge").value="";
     document.getElementById("txtEmail").value="";
     document.getElementById("txtSalary").value="";
+}
 
+function btnLoadtblOnAction(){
+    let tblCustomer = document.getElementById("tblCustomer");
+   
+    let body="";
+
+    for(let i=0 ;i<customerList.length ; i++){
+
+        body += `
+        <tr>
+
+        <td>${customerList[i].name}</td>
+        <td>${customerList[i].address}</td>
+        <td>${customerList[i].age}</td>
+        <td>${customerList[i].email}</td>
+        <td>${customerList[i].salary}</td>
+        
+        <tr>
+
+        `      
+    }
+     
+    tblCustomer.innerHTML=body;   
 
 }
 
